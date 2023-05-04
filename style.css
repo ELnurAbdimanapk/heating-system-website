@@ -1,20 +1,22 @@
 html {
-  box-sizing: border-box;
   font-size: 62.5%;
 }
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
   margin: 0;
-  padding: ;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
 }
 
 body {
-  margin: 0;
-  padding: 0;
   font-family: "Inter";
   font-weight: 400;
+  font-style: normal;
 }
 .container {
   max-width: 1168px;
@@ -31,102 +33,53 @@ body {
   --text--grey-color: #b6b6b6;
 }
 .text-h1-28px {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 2.8rem;
-  line-height: 150%;
+  font: 700 2.8rem/150% "Inter";
   color: var(--bold--text-color);
 }
 .text-h1-white-28px {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 2.8rem;
-  line-height: 150%;
+  font: 700 2.8rem/150% "Inter";
   color: var(--white--text-color);
 }
 .text-h1-white-24px {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 2.4rem;
-  line-height: 2.9rem;
+  font: 700 2.4rem/2.9rem "Inter";
   color: var(--white--text-color);
 }
 
 .text-p-white-20px {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 2rem;
-  line-height: 125%;
+  font: 700 2rem/125% "Inter";
   color: var(--white--text-color);
 }
 .text-p-16px {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1.6rem;
-  line-height: 150%;
+  font: 700 1.6rem/150% "Inter";
   color: var(--text-color);
 }
 .text-p-14px {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.4rem;
-  line-height: 1.7rem;
+  font: 400 1.4rem/1.7rem "Inter";
   color: var(--text-color);
 }
 .text-p-white-14px {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.4rem;
-  line-height: 150%;
+  font: 400 1.4rem/150% "Inter";
   color: var(--white--text-color);
 }
 .text-p-grey-14px {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.4rem;
-  line-height: 140%;
+  font: 400 1.4rem/140% "Inter";
   color: var(--text--grey-color);
 }
 
 .text-h6-black-14px {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 150%;
+  font: 500 1.4rem/150% "Inter";
   color: var(--bold--text-color);
 }
 .text-h6-white-13px {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
+  font: 500 1.3rem/1.6rem "Inter";
   color: var(--white--text-color);
 }
 .text-p-white-13px {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1.3rem;
-  line-height: 125%;
+  font: 700 1.3rem/125% "Inter";
   color: var(--white--text-color);
 }
 .text-p-white-11px {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1.1rem;
-  line-height: 125%;
+  font: 700 1.1rem/125% "Inter";
   color: var(--white--text-color);
 }
 
@@ -136,6 +89,10 @@ body {
   width: 198px;
   height: 40px;
 }
+
+
+/* Navbar */
+
 
 .navbar {
   display: flex;
@@ -154,22 +111,12 @@ body {
   justify-content: space-between;
   flex-grow: 0.16;
   list-style: none;
-  text-decoration: none;
-}
-.menu__link {
-  text-decoration: none;
-}
-
-.menu__item {
-  text-decoration: none;
 }
 
 .header {
   display: flex;
-  /* justify-content: space-around; */
   background-image: url(/images/fotka.png);
   height: 56.7rem;
-  /* align-items: center; */
 }
 
 .header__article {
@@ -273,30 +220,114 @@ body {
   z-index: 1;
   left: 56.4rem;
   top: 5.7rem;
-
 }
-.about__text-header{
+.about__text-header {
   margin: 4.8rem 0 0 4.8rem;
-
-
 }
-.about__text-paragraph{
+.about__text-paragraph {
   width: 44.4rem;
-height: 14rem;
+  height: 14rem;
   margin: 0.2rem 0 0 4.8rem;
   flex: none;
-order: 1;
-flex-grow: 0;
-line-height: 140%;
-
+  order: 1;
+  flex-grow: 0;
+  line-height: 2rem;
 }
-.about_image{
+.about_image {
   position: absolute;
   z-index: 2;
 }
 .about__button {
   color: var(--bold--text-color);
-  border: 1px solid #0F2A59;
+  border: 1px solid #0f2a59;
   margin: 2rem 0 0 4.8rem;
   width: 26rem;
 }
+
+/* About Section */
+.about__section {
+  margin-top: 4.6rem;
+  position: relative;
+  height: 38.4rem;
+}
+.about__section-image img {
+  position: absolute;
+  left: 37.1rem;
+  z-index: 1;
+  width: 800px;
+  height: 480px;
+}
+
+.about__section-text {
+  width: 540px;
+  height: 365px;
+  background-color: white;
+  position: absolute;
+  z-index: 2;
+  left: 6.4rem;
+  top: 4.5rem;
+}
+.about__text-header-second {
+  margin: 4.8rem 0 0 4.8rem;
+}
+.about__text-paragraph-second {
+  width: 44.4rem;
+  height: 14rem;
+  margin: 0.2rem 0 0 4.8rem;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  line-height:2rem;
+}
+.about__button {
+  margin: 1.5rem 0 0 4.8rem;
+  width: 260px;
+  height: 40px;
+}
+
+
+/* Third Section */
+.about__section-third{
+  margin-top: 14.5rem;
+}
+.about__section-third-text{
+  margin-top: -1rem;
+  margin-left: 1.9rem;
+}
+
+/* Footer */
+
+footer {
+  background-color: var(--text-color);
+  height: 47.8rem;
+  margin-top: 7.7rem;
+}
+footer section{
+  /* margin-top: 5rem; */
+  display: flex;
+  justify-content: space-between;
+}
+.footer__text,.footer__image{
+  margin-top: 5.6rem;
+}
+
+.footer__contact{
+  display: flex;
+  justify-content: space-between;
+  width: 17rem;
+  margin-top: 1.8rem;
+}
+.footer__contact-image{
+  background-color: transparent;
+}
+.social-media{
+  margin-top: 4rem;
+}
+.social-media .footer__contact-text{
+  margin-right: 6rem;
+  
+}
+.map-contact{
+  margin-top: 4rem;
+}
+
