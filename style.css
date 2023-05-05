@@ -99,9 +99,7 @@ body {
   height: 40px;
   transition: var(--background-color) 0.5s ease;
 }
-.button:hover{
-  background-color: var(--text--grey-color);
-}
+
 
 @keyframes pulse {
   0% {
@@ -120,3 +118,14 @@ body {
 }
 
 
+/* Media Screen */
+
+@media screen and (max-width: 320px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .menu__items{
+    display: none;
+  }
+}
