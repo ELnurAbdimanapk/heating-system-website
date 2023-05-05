@@ -1,0 +1,72 @@
+@import url('./style.css');
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6.4rem;
+  }
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    flex-grow: 0.75;
+  }
+  .menu__items {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 0.16;
+    list-style: none;
+    cursor: pointer;
+  }
+  .menu__item:hover{
+    color:#200e32;
+    text-shadow: #200e32;
+    border: 1px solid #200e32;
+    border-radius: 1rem;
+  }
+  .menu__item:active{
+    color:#eb0000;
+    text-shadow: #eb0000;
+    border: 1px solid #eb0000;
+    border-radius: 1rem;
+  }
+  .lang-switcher {
+    cursor: pointer;
+  }
+  
+  .header {
+    display: flex;
+    background-image: url(/images/fotka.png);
+    height: 56.7rem;
+  }
+  
+  .header__article {
+    margin: 22.7rem 0 0 9.5rem;
+  }
+  .header__paragraph {
+    margin-top: 2rem;
+  }
+  .header__button {
+    margin-top: 5.3rem;
+  }
+  .header__button-arrow {
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .left-arrow {
+    margin: 27.4rem 0 0 3.2rem;
+  }
+  .right-arrow {
+    margin: 27.4rem 0 0 86.5rem;
+  }
+  .header__footer-arrow {
+    margin: 53.1rem 61.5rem 0 0;
+  }
