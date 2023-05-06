@@ -20,6 +20,7 @@ footer {
     justify-content: space-between;
     width: 17rem;
     margin-top: 1.8rem;
+    cursor: pointer;
   }
   .footer__contact-image {
     background-color: transparent;

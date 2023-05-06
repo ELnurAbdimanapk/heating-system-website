@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-@import url("./style.css");
 
-=======
->>>>>>> edd202388d01cf2512777952d16a7c86ad9fdebd
 /* Navbar */
 
 .navbar {
@@ -10,7 +6,9 @@
   justify-content: space-between;
   align-items: center;
   height: 6.4rem;
+  margin-left: 1rem;
 }
+
 .menu {
   display: flex;
   justify-content: space-between;
@@ -23,9 +21,14 @@
   flex-grow: 0.16;
   list-style: none;
   cursor: pointer;
+  margin:  0.4rem 0 0 3rem;
 }
 
 .lang-switcher {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 0.03;
   cursor: pointer;
 }
 
@@ -74,9 +77,9 @@
     margin: 27.4rem 0 0 22rem;
   }
 
-  .header__article {
+  /* .header__article {
     margin: 15rem 0 0 6rem;
-  }
+  } */
   .navbar__logo {
     font-size: 3rem;
   }
